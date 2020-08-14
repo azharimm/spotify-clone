@@ -8,3 +8,9 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.sidebar__logo {
+    height: 70px;
+    padding: 10px;
+    margin-right: auto;
+}
