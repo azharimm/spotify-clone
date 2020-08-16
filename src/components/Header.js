@@ -5,7 +5,7 @@ import { useDataLayerValue } from '../context/DataLayer';
 import './Header.css';
 
 const Header = () => {
-    const [{user}, dispatch] = useDataLayerValue()
+    const [{user}] = useDataLayerValue()
     return (
         <div className="header">
             <div className="header__left">

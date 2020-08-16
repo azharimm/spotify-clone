@@ -9,7 +9,7 @@ import './App.css';
 const spotify = new SpotifyWebApi();
 
 const App = () => {
-    const [{ user, token }, dispatch] = useDataLayerValue();
+    const [{ token }, dispatch] = useDataLayerValue();
 
     useEffect(() => {
         const hash = getTokeFromUrl();
@@ -41,7 +41,7 @@ const App = () => {
                 })
             })
         }
-    }, []);
+    }, [dispatch]);
 
     return (
         <div className="App">
